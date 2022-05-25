@@ -1,7 +1,6 @@
 <?php
-$_GET;
-$entradadoUsuario = $_GET;
-if (isset($entradadoUsuario["$_GET"])){
+$entradadoUsuario = addslashes($_POST['name']);
+if (isset($entradadoUsuario[""])){
     echo "Exibindo resultados para: " . $entradadoUsuario;
 }
 else {
