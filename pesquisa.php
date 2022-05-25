@@ -1,6 +1,6 @@
 <?php
-$entradadoUsuario = $_POST;
-echo "Exibindo resultados para: " . $entradadoUsuario;
+##$entradadoUsuario = $_POST["pesquisa"];
+echo "Exibindo resultados para: " . $_POST["pesquisa"];
 ##if (isset($entradadoUsuario)){
     ##echo "Exibindo resultados para: " . $entradadoUsuario;
 ##}
