@@ -9,31 +9,15 @@
 <!--A primeira section é o cabecalho da página, onde fica o campo de pesquisa;-->
         <section>
             <div>
-                <form class="form" method="GET" action="./pesquisa.php">
+                <form class="form" method="POST" action="./pesquisa.php">
                     <fieldset>
                         <legend>O que você procura?</legend>
                         <input type="search" name="pesquisa">
                         <input	type="submit" value="Pesquisar"/>
                     </fieldset>
-                </form>
-
-
-
-
-                <!--                <?php
-                    $_GET;
-                    $entradadoUsuario = $_GET;
-                    if (isset($entradadoUsuario["$_GET"])){
-                        echo "Exibindo resultados para: " . $entradadoUsuario;
-                    }
-                    else {
-                        echo "Por favor, digite algo no campo de pesquisa";
-                    }
-                ?>
--->           
+                </form>          
             </div>
 
-            <!--           <div class="selectionfilters">Filtros<input type="search"></div>   -->
         </section>
 
         <!--A segunda apresentará os resultados;-->        
