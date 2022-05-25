@@ -9,17 +9,18 @@
 <!--A primeira section é o cabecalho da página, onde fica o campo de pesquisa;-->
         <section>
             <div>
-                <form>
+                <form class="form" action="pesquisa.php" method="post">
                     <fieldset>
                         <legend>O que você procura?</legend>
-                        <input type="search">
-                        <input	type="submit" value="Pesquisar"/>
+                        <input type="search" name="pesquisa">
+                        <input type="submit" value="Pesquisar"/>
                     </fieldset>
-                </form>
+                </form>          
             </div>
- <!--           <div class="selectionfilters">Filtros<input type="search"></div>   -->
+
         </section>
-<!--A segunda apresentará os resultados;-->        
+
+        <!--A segunda apresentará os resultados;-->        
         <section>
             <div>
                 <p> </p>
