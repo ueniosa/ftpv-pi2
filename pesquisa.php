@@ -1,6 +1,6 @@
 <?php
-$entradadoUsuario = addslashes($_POST['name']);
-if (isset($_POST['name'])){
+$entradadoUsuario = addslashes($_POST);
+if (isset($entradadoUsuario)){
     echo "Exibindo resultados para: " . $entradadoUsuario;
 }
 else {
