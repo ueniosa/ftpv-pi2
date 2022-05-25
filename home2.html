@@ -9,14 +9,14 @@
 <!--A primeira section é o cabecalho da página, onde fica o campo de pesquisa;-->
         <section>
             <div>
-                <form>
+                <form class="form" method="POST" action="./pesquisa.php">
                     <fieldset>
                         <legend>O que você procura?</legend>
                         <input type="search">
                         <input	type="submit" value="Pesquisar"/>
                     </fieldset>
                 </form>
-                <?php
+<!--                <?php
                     $_GET;
                     $entradadoUsuario = $_GET;
                     if (isset($entradadoUsuario["$_GET"])){
@@ -26,6 +26,7 @@
                         echo "Por favor, digite algo no campo de pesquisa";
                     }
                 ?>
+-->           
             </div>
  <!--           <div class="selectionfilters">Filtros<input type="search"></div>   -->
         </section>
