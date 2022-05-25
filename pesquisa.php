@@ -1,5 +1,5 @@
 <?php
-$entradadoUsuario = addslashes($_POST);
+$entradadoUsuario = $_GET;
 echo "Exibindo resultados para: " . $entradadoUsuario;
 ##if (isset($entradadoUsuario)){
     ##echo "Exibindo resultados para: " . $entradadoUsuario;
