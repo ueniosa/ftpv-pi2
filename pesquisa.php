@@ -4,7 +4,7 @@ echo "Exibindo resultados para: " . $_POST["pesquisa"];
 
 $entradadoUsuario = $_POST["pesquisa"];
 
-echo "Palavra " . $entradadoUsuario;
+
 
 
 ##if (isset($entradadoUsuario)){
