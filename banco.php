@@ -19,7 +19,7 @@ $pesquisa_servicos = buscar_profissionais($bdBanco, $conexao);
 
 function buscar_profissionais($conexao)
 {
-    $buscaBanco = 'SELECT * FROM ftpv WHERE servico = '$_POST($entradadoUsuario)'';
+    $buscaBanco = 'SELECT * FROM ftpv WHERE servico = ';
     $consultaDB = mysqli_query($conexao, $buscaBanco);
     
     $resultado = [];
