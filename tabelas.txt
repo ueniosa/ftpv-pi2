@@ -1,7 +1,11 @@
-CREATE TABLE usuarios(
+CREATE TABLE usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR,
     email VARCHAR,
     telefone INT,
     servico VARCHAR
 );
+
+CREATE USER 'aplicacao'@'localhost' IDENTIFIED BY '1833asdf';
+GRANT ALL PRIVILEGES ON *.* TO 'aplicacao'@'%';
+GRANT ALL PRIVILEGES ON *.* TO 'aplicacao'@'localhost';
