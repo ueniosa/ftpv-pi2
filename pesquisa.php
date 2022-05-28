@@ -4,7 +4,7 @@ echo "Exibindo resultados para: " . $_POST["pesquisa"];
 
 $entradadoUsuario = $_POST["pesquisa"];
 
-
+require "banco.php";
 
 
 ##if (isset($entradadoUsuario)){
