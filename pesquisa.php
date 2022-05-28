@@ -1,17 +1,25 @@
-<?php
-##$entradadoUsuario = $_POST["pesquisa"];
-echo "Exibindo resultados para: " . $_POST["pesquisa"];
-
-$entradadoUsuario = $_POST["pesquisa"];
-
-require "banco.php";
+<html>
+<head>
+    <title>Resultados</title>
+</head>
 
 
-##if (isset($entradadoUsuario)){
-    ##echo "Exibindo resultados para: " . $entradadoUsuario;
-##}
-##else {
-    ##echo $_POST;
-    ## echo "Por favor, digite algo no campo de pesquisa";
-##}
-?>
+<body>
+
+    <?php
+       echo "Exibindo resultados para: " . $_POST["pesquisa"];
+       
+        if (total > 0) {
+            do {
+
+        $entradadoUsuario = $_POST["pesquisa"];
+
+        <p>echo $resultado;<p/>
+
+        require "banco.php";
+
+    ?>
+
+</body>
+
+</html>

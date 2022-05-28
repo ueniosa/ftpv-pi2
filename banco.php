@@ -10,13 +10,16 @@ if	(mysqli_connect_errno($conexao))	{
     die();
     }
 
+##mysql_select_db($bdBanco, $conexao);
 
-$pesquisa_servicos = buscar_profissionais($conexao);
+
+
+$pesquisa_servicos = buscar_profissionais($bdBanco, $conexao);
 
 
 function buscar_profissionais($conexao)
 {
-    $buscaBanco = 'SELECT * FROM ftpv';
+    $buscaBanco = 'SELECT * FROM ftpv WHERE servico = '$_POST($entradadoUsuario)'';
     $consultaDB = mysqli_query($conexao, $buscaBanco);
     
     $resultado = [];
