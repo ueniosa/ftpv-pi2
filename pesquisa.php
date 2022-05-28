@@ -7,16 +7,15 @@
 <body>
 
     <?php
-       echo "Exibindo resultados para: " . $_POST["pesquisa"];
+        require "banco.php";
+        echo "Exibindo resultados para: " . $_POST["pesquisa"];
        
         if (total > 0) {
-            do {
+            do { 
 
         $entradadoUsuario = $_POST["pesquisa"];
 
-        <p>echo $resultado;<p/>
-
-        require "banco.php";
+        echo $resultado;
 
     ?>
 

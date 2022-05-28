@@ -1,4 +1,17 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Resultados</title>
+    </head>
+
+<body>
+
+<p></p>
+
 <?php
+
+Exibindo resultados para: " . $_POST["pesquisa"];
+
 $bdServidor = '127.0.0.1';
 $bdUsuario = 'aplicacao';
 $bdSenha = '1833asdf';
@@ -12,14 +25,14 @@ if	(mysqli_connect_errno($conexao))	{
 
 ##mysql_select_db($bdBanco, $conexao);
 
-
+$entradaUsuario = $POST('pesquisa');
 
 $pesquisa_servicos = buscar_profissionais($bdBanco, $conexao);
 
 
 function buscar_profissionais($conexao)
 {
-    $buscaBanco = 'SELECT * FROM ftpv WHERE servico = ';
+    $buscaBanco = 'SELECT * FROM ftpv WHERE servico = $entradaUsuario ';
     $consultaDB = mysqli_query($conexao, $buscaBanco);
     
     $resultado = [];
@@ -32,4 +45,8 @@ function buscar_profissionais($conexao)
     
 }
 
+    echo $resultado;
+
 ?>
+</body>
+</html>
